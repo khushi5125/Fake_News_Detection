@@ -1,0 +1,29 @@
+# Fake News Detection
+
+A Streamlit application that classifies news text as real or fake using a locally
+fine-tuned XLM-RoBERTa model. It supports direct text input and extracting text
+from a URL.
+
+## Run the application
+
+1. Install Python 3 and the dependencies:
+
+   ```powershell
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   python -m pip install -r requirements.txt
+   ```
+
+2. Copy the trained `fake_news_model` directory into the project root, next to
+   `model_loader.py`.
+3. Start Streamlit:
+
+   ```powershell
+   python -m streamlit run app.py
+   ```
+
+The model loader reports an error when the local model directory is missing.
+The model and training datasets are intentionally excluded from Git because
+they are very large; keep the model in the project root and the datasets under
+`data/`, or store them in a model/dataset hosting service. Training scripts and
+code are included in this repository.

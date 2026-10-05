@@ -1,0 +1,38 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+Resume
+
+# Generated datasets
+data/
+*.csv
+*.xlsx
+
+# Trained models and training checkpoints
+fake_news_model/
+checkpoints/
+checkpoint-*/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+
+# Tool caches and logs
+.cache/
+*.log
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
